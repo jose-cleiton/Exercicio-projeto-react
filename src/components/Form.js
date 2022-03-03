@@ -1,4 +1,6 @@
 import React from "react";
+import Input from "./Input";
+
 class Form extends React.Component {
   render() {
     const {
@@ -18,6 +20,21 @@ class Form extends React.Component {
 
     return (
       <>
+        <Input
+          label="Nome: "
+          cardName={cardName}
+          nameInput="name-input"
+          value={cardName}
+          onChange={onInputChange}
+          type="text"
+        />
+        <Input
+          label="Descrição:"
+          cardDescription={cardDescription}
+          value={cardDescription}
+          nameInput="description-input"
+          type="textarea"
+        />
         <form onSubmit={(e) => e.preventDefault()}>
           <div>
             <label htmlFor="cardName">

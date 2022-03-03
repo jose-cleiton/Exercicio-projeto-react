@@ -126,22 +126,23 @@ class App extends React.Component {
   }; // fim  updateCardList
   // fim funções
   render() {
-    console.log(this.state.cardName);
     const {
-      cardName,
-      cardDescription,
-      cardAttr1,
-      cardAttr2,
-      cardAttr3,
-      cardImage,
-      cardRare,
-      cardTrunfo,
-      hasTrunfo,
-      isSaveButtonDisabled,
-      nameFilter,
-      rareFilter,
-      trunfoFilter
-    } = this.state;
+      state: {
+        cardName,
+        cardDescription,
+        cardAttr1,
+        cardAttr2,
+        cardAttr3,
+        cardImage,
+        cardRare,
+        cardTrunfo,
+        hasTrunfo,
+        isSaveButtonDisabled,
+        nameFilter,
+        rareFilter,
+        trunfoFilter
+      }
+    } = this;
     const { onInputChange, onSaveButtonClick, updateCardList } = this;
     return (
       <div>
