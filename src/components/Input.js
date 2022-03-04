@@ -22,6 +22,8 @@ class Input extends React.Component {
     } = this.props;
 
     console.log(cardName);
+    console.log(this.props);
+
     return (
       <>
         <label htmlFor="cardName">

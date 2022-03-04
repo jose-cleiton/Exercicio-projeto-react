@@ -24,14 +24,12 @@ class Form extends React.Component {
           label="Nome: "
           cardName={cardName}
           nameInput="name-input"
-          value={cardName}
           onChange={onInputChange}
           type="text"
         />
         <Input
           label="Descrição:"
           cardDescription={cardDescription}
-          value={cardDescription}
           nameInput="description-input"
           type="textarea"
         />

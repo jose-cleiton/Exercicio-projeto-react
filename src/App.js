@@ -4,7 +4,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cardName: "",
+      cardName: "deu certo",
       cardDescription: "",
       cardAttr1: "0",
       cardAttr2: "0",
