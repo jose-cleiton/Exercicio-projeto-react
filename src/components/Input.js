@@ -2,39 +2,23 @@ import React from "react";
 
 class Input extends React.Component {
   render() {
-    const {
-      cardName,
-      cardDescription,
-      cardAttr1,
-      cardAttr2,
-      cardAttr3,
-      cardImage,
-      cardRare,
-      cardTrunfo,
-      hasTrunfo,
-      isSaveButtonDisabled,
-      onInputChange,
-      onSaveButtonClick,
-      nameInput,
-      estado,
-      type,
-      label
-    } = this.props;
-
-    console.log(cardName);
-    console.log(this.props);
-
     return (
       <>
-        <label htmlFor="cardName">
-          {label}
-          <input
-            value={cardName}
-            data-testid={nameInput}
-            type={type}
-            onChange={onInputChange}
-          />
-        </label>
+        <section>
+          <label>
+            {this.props.label}
+            <input
+              name={this.props.name}
+              data-testid={this.props.nameInput}
+              value={this.props.value}
+              onChange={this.props.onInputChange}
+              type={this.props.type}
+            />
+            <h1>{this.props.value}</h1>
+          </label>
+        </section>
+
+        <br />
       </>
     );
   }

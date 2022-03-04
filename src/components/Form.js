@@ -20,89 +20,58 @@ class Form extends React.Component {
 
     return (
       <>
-        <Input
-          label="Nome: "
-          cardName={cardName}
-          nameInput="name-input"
-          onChange={onInputChange}
-          type="text"
-        />
-        <Input
-          label="Descrição:"
-          cardDescription={cardDescription}
-          nameInput="description-input"
-          type="textarea"
-        />
         <form onSubmit={(e) => e.preventDefault()}>
-          <div>
-            <label htmlFor="cardName">
-              Nome:
-              <input
-                name="cardName"
-                data-testid="name-input"
-                value={cardName}
-                onChange={onInputChange}
-              />
-            </label>
-          </div>
-          <div>
-            <label htmlFor="cardDescription">
-              Descrição:
-              <textarea
-                name="cardDescription"
-                data-testid="description-input"
-                value={cardDescription}
-                onChange={onInputChange}
-              />
-            </label>
-          </div>
-          <div>
-            <label htmlFor="cardAttr1">
-              Atributo 1:
-              <input
-                type="number"
-                name="cardAttr1"
-                data-testid="attr1-input"
-                value={cardAttr1}
-                onChange={onInputChange}
-              />
-            </label>
-          </div>
-          <div>
-            <label htmlFor="cardAttr2">
-              Atributo 2:
-              <input
-                type="number"
-                name="cardAttr2"
-                data-testid="attr2-input"
-                value={cardAttr2}
-                onChange={onInputChange}
-              />
-            </label>
-          </div>
-          <div>
-            <label htmlFor="cardAttr3">
-              Atributo 3:
-              <input
-                type="number"
-                name="cardAttr3"
-                data-testid="attr3-input"
-                value={cardAttr3}
-                onChange={onInputChange}
-              />
-            </label>
-          </div>
-          <div>
-            <label htmlFor="cardImage">
-              Link da imagem:
-              <input
-                name="cardImage"
-                data-testid="image-input"
-                value={cardImage}
-                onChange={onInputChange}
-              />
-            </label>
-          </div>
+          <Input
+            name="cardName"
+            label="Nome: "
+            nameInput="name-input"
+            onInputChange={onInputChange}
+            type="text"
+            value={cardName}
+          />
+
+          <Input
+            name="cardDescription"
+            label=" Descrição:"
+            nameInput="description-input"
+            onInputChange={onInputChange}
+            type="textarea"
+            value={cardDescription}
+          />
+
+          <Input
+            name="cardAttr1"
+            label="Atributo 1:"
+            nameInput="attr1-input"
+            onInputChange={onInputChange}
+            type="number"
+            value={cardAttr1}
+          />
+          <Input
+            name="cardAttr2"
+            label="Atributo 2:"
+            nameInput="att2-input"
+            onInputChange={onInputChange}
+            type="number"
+            value={cardAttr2}
+          />
+          <Input
+            name="cardAttr3"
+            label="Atributo 3:"
+            nameInput="attr3-input"
+            onInputChange={onInputChange}
+            type="number"
+            value={cardAttr3}
+          />
+
+          <Input
+            name="cardImage"
+            label=" Link da imagem:"
+            nameInput="image-input"
+            onInputChange={onInputChange}
+            type="text"
+            value={cardImage}
+          />
           <div>
             <label htmlFor="cardRare">
               Raridade:
